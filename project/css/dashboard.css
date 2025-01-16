@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/back.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    text-align: center;
+}
+
+.logout-btn a {
+    text-decoration: none; /* Hapus garis bawah */
+}
+
+.logout-btn button {
+    all: unset; /* Menghilangkan semua gaya default tombol */
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Warna latar belakang tombol */
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.logout-btn button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe); /* Warna latar belakang saat hover */
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.admin-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-actions .action-card {
+    background: rgba(255, 255, 255, 0.7); /* Transparansi lebih rendah */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    color: #333;
+    transition: background 0.3s, transform 0.2s; /* Tambahkan transisi untuk efek hover */
+}
+
+.admin-actions .action-card:hover {
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang lebih solid saat hover */
+    transform: scale(1.05); /* Efek memperbesar saat hover */
+}
+
+.action-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.action-card h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.action-card button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.action-card button:hover {
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #4facfe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

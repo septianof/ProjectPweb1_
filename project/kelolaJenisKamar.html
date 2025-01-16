@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Fasilitas - Anoboy Hotel</title>
+    <link rel="stylesheet" href="css/kelola.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kelola Fasilitas</h1>
+        </div>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nama-fasilitas">Nama Fasilitas:</label>
+                <input type="text" id="nama-fasilitas" name="nama_fasilitas" placeholder="Masukkan nama fasilitas" required>
+            </div>
+            <div class="form-group">
+                <label for="deskripsi-fasilitas">Deskripsi:</label>
+                <input type="text" id="deskripsi-fasilitas" name="deskripsi_fasilitas" placeholder="Masukkan deskripsi fasilitas" required>
+            </div>
+            <div class="action-buttons">
+                <button type="submit" class="btn-add">Tambah</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+        </form>
+        <div class="table-container">
+            <h2>Daftar Fasilitas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Fasilitas</th>
+                        <th>Deskripsi</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Kolam Renang</td>
+                        <td>Kolam renang dengan pemandangan kota</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Hapus</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gym</td>
+                        <td>Peralatan fitness lengkap</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Hapus</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Spa</td>
+                        <td>Layanan spa dan relaksasi</td>
+                        <td>
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-delete">Hapus</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

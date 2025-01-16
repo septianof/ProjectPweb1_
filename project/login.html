@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form - Anoboy Hotel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('img/back.jpg') no-repeat center center/cover;
+            color: #fff;
+            perspective: 1000px; /* Menambahkan perspektif 3D pada halaman */
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.7); /* Transparansi pada form login */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            width: 100%;
+            max-width: 400px;
+            transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Transisi tambahan untuk transform */
+        }
+
+        .login-container:hover {
+            background: rgba(255, 255, 255, 0.9); /* Latar belakang lebih terang saat hover */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Shadow lebih tebal saat hover */
+            transform: translateZ(30px); /* Efek terangkat ke arah pengguna (mendekat) */
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .login-header h2 {
+            font-size: 18px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #4facfe;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-align: center;
+            text-decoration: none; /* Menghilangkan underline */
+        }
+
+        .login-button:hover {
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #555;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            color: #4facfe;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Login</h1>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <a href="dashboardAdmin.html" class="login-button">Login</a> <!-- Menggunakan <a> untuk mengarahkan ke halaman dashboard -->
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+    </div>
+</body>
+</html>

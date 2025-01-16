@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/back.jpg') no-repeat center center/cover;
+    color: #fff;
+    perspective: 1000px; /* Menambahkan perspektif 3D pada halaman */
+}
+
+.room-container {
+    background: rgba(255, 255, 255, 0.7); /* Transparansi pada container */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 600px;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Transisi tambahan */
+}
+
+.room-container:hover {
+    background: rgba(255, 255, 255, 0.9); /* Latar belakang lebih terang saat hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Shadow lebih tebal saat hover */
+    transform: translateZ(30px); /* Efek terangkat ke arah pengguna */
+}
+
+.room-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.room-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.room-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.room-table th, .room-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ccc;
+    color: #333; /* Mengatur warna teks agar lebih gelap untuk kontras */
+}
+
+.room-table th {
+    background-color: #4facfe;
+    color: white; /* Warna teks putih agar kontras dengan latar belakang biru */
+}
+
+.room-table td {
+    background-color: #fff;
+    color: #333; /* Warna teks lebih gelap agar kontras dengan latar belakang putih */
+}

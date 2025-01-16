@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Pesanan - Anoboy Hotel</title>
+    <style>
+        /* Gaya Umum */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('img/back.jpg') no-repeat center center/cover;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table thead {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: #fff;
+        }
+
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        table tr:nth-child(even) {
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .breakfast-yes {
+            color: green;
+            font-weight: bold;
+        }
+
+        .breakfast-no {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Data Pesanan</h1>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Pemesan</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Tipe Kamar</th>
+                        <th>Tanggal Pemesanan</th>
+                        <th>Durasi Menginap (hari)</th>
+                        <th>Termasuk BreakFast</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Septiano</td>
+                        <td>Laki-laki</td>
+                        <td>Deluxe</td>
+                        <td>2025-01-14</td>
+                        <td>3</td>
+                        <td class="breakfast-yes">Ya</td>
+                    </tr>
+                    <tr>
+                        <td>Aisyah</td>
+                        <td>Perempuan</td>
+                        <td>Family</td>
+                        <td>2025-01-13</td>
+                        <td>2</td>
+                        <td class="breakfast-no">Tidak</td>
+                    </tr>
+                    <tr>
+                        <td>Febriansyah</td>
+                        <td>Laki-laki</td>
+                        <td>Standard</td>
+                        <td>2025-01-12</td>
+                        <td>5</td>
+                        <td class="breakfast-yes">Ya</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
